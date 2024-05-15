@@ -6,7 +6,7 @@ hazard_model_id = "HIGHEST_WEIGHT"
 # model_version = "NSHM_v1.0.4"
 
 # alternativly, specify a path to logic tree files
-srm_file = "/home/chrisdc/NSHM/thp-demo/B-highest_weight/gmcm-highest_weight.json"
+srm_file = "/home/chrisdc/NSHM/thp-demo/B-highest_weight/srm-highest_weight.json"
 gmcm_file = "/home/chrisdc/NSHM/thp-demo/B-highest_weight/gmcm-highest_weight.json"
 
 [site]

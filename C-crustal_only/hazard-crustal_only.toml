@@ -19,7 +19,8 @@ locations = ["WLG", "AKL", "DUD", "CHC"]
 
 
 [calculation]
-imts = ["PGA", "SA(0.5)", "SA(1.0)", "SA(2.0)", "SA(3.0)"]
+# imts = ["PGA", "SA(0.5)", "SA(1.0)", "SA(2.0)", "SA(3.0)"]
+imts = ["PGA"]
 agg_types = [
     "mean", "cov", "std", 
     "0.005", "0.01", "0.025", "0.05",

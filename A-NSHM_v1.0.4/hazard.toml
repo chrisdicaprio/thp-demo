@@ -1,0 +1,28 @@
+[general]
+compatibility_key = "NZSHM22-0"
+hazard_model_id = "NSHM_v1.0.4"
+
+[logic_trees]
+model_version = "NSHM_v1.0.4"
+
+# alternativly, specify a path to logic tree files
+# srm_file = "demo/srm_logic_tree_no_slab.json"
+# gmcm_file = "demo/gmcm_logic_tree_medium.json"
+
+[site]
+vs30s = [275]
+# locations = [
+#     '-46.100~166.400', '-46.800~167.900',
+#     '-41.800~171.900', '-41.600~172.500'
+# ]
+locations = ["WLG", "AKL", "DUD", "CHC"]
+
+
+[calculation]
+imts = ["PGA", "SA(0.5)", "SA(1.0)", "SA(2.0)", "SA(3.0)"]
+agg_types = [
+    "mean", "cov", "std", 
+    "0.005", "0.01", "0.025", "0.05",
+    "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9",
+    "0.95", "0.975", "0.99", "0.995"
+]

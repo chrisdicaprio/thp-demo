@@ -1,6 +1,6 @@
 [general]
 compatibility_key = "NZSHM22-0"
-hazard_model_id = "NSHM_v1.0.4"
+hazard_model_id = "NSHM_2022_DEMO"
 
 [logic_trees]
 model_version = "NSHM_v1.0.4"
@@ -16,6 +16,7 @@ vs30s = [275]
 #     '-41.800~171.900', '-41.600~172.500'
 # ]
 locations = ["WLG", "AKL", "DUD", "CHC"]
+# locations = ["NZ_0_1_NB_1_1"]
 
 
 [calculation]

@@ -1,13 +1,13 @@
 [general]
 compatibility_key = "NZSHM22-0"
-hazard_model_id = "CRUSTAL_ONLY"
+hazard_model_id = "HIGHEST_WEIGHT"
 
 [logic_trees]
 # model_version = "NSHM_v1.0.4"
 
 # alternativly, specify a path to logic tree files
-srm_file = "/home/chrisdc/NSHM/thp-demo/C-crustal_only/srm-crustal_only.json"
-gmcm_file = "/home/chrisdc/NSHM/thp-demo/C-crustal_only/gmcm-crustal_only.json"
+srm_file = "srm-highest_weight.json"
+gmcm_file = "gmcm-highest_weight.json"
 
 [site]
 vs30s = [275]
@@ -19,8 +19,8 @@ locations = ["WLG", "AKL", "DUD", "CHC"]
 
 
 [calculation]
-# imts = ["PGA", "SA(0.5)", "SA(1.0)", "SA(2.0)", "SA(3.0)"]
-imts = ["PGA"]
+imts = ["PGA", "SA(0.5)", "SA(1.0)", "SA(2.0)"]
+# imts = ["PGA"]
 agg_types = [
     "mean", "cov", "std", 
     "0.005", "0.01", "0.025", "0.05",

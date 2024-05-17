@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "thp-demo"
+version = "0.1.0"
+description = "toshi-hazard-post demonstration"
+authors = ["chrisdicaprio <christopher.dicaprio@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "thp_demo"},
+    {include = "scripts"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+matplotlib = "^3.9.0"
+nzshm-common = {git = "https://github.com/GNS-Science/nzshm-common-py.git", rev = "pre-release"}
+toshi-hazard-post = {git = "https://github.com/GNS-Science/toshi-hazard-post.git", rev = "26-THP_v2_arrow-CDC"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

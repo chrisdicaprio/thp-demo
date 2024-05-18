@@ -1,3 +1,4 @@
+import os
 from nzshm_common.location.location import get_locations
 from thp_demo.curves_v4 import get_hazard as get_hazard_v4, ArrowFS
 from thp_demo.plotting_functions import plot_hazard_curve
@@ -34,7 +35,7 @@ imts = ["PGA"]
 poes = [0.1, 0.02]
 fs_specs = dict(
     arrow_fs=ArrowFS.LOCAL,
-    arrow_dir='/data/toshi_hazard_store/AGG'
+    arrow_dir=os.getenv('THP_THS_AGG_LOCAL_DIR')
 )
 
 model_ids = ['NSHM_2022_DEMO', 'HIGHEST_WEIGHT', 'CRUSTAL_ONLY']

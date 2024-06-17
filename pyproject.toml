@@ -13,7 +13,7 @@ packages = [
 python = ">=3.10,<3.13"
 matplotlib = "^3.9.0"
 nzshm-common = {git = "https://github.com/GNS-Science/nzshm-common-py.git", rev = "pre-release"}
-toshi-hazard-post = {git = "https://github.com/GNS-Science/toshi-hazard-post.git", rev = "26-THP_v2_arrow-CDC"}
+ipython = "^8.24.0"
 
 
 
